@@ -1,0 +1,85 @@
+
+/* Global Styles */
+body {
+background-color: #0b0f19;
+color: #f3f4f6;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+
+h2 {
+color: #00ffff;
+border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+margin-top: 0;
+margin-bottom: 1rem;
+padding-bottom: 0.5rem;
+}
+
+p {
+color: #9ca3af;
+margin-bottom: 1rem;
+}
+
+nav {
+background-color: #0f172a;
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+margin: 0;
+padding: 1rem;
+border-bottom: 1px solid #1e293b;
+}
+
+nav a {
+color: #00ffff;
+text-decoration: none;
+font-weight: 600;
+padding: 0.4rem 0.8rem;
+border-radius: 4px;
+}
+
+nav a:hover {
+background-color: rgba(0, 255, 255, 0.15);
+}
+
+main {
+max-width: 800px;
+margin: 2rem auto;
+padding: 0 1rem;
+}
+
+img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+border: 1px solid #4b5563;
+margin-top: 1rem;
+}
+
+footer {
+text-align: center;
+padding: 1.5rem;
+color: #6b7280;
+border-top: 1px solid #1f2937;
+margin-top: 2rem;
+}
+
+/* ID SELECTOR */
+#main-header {
+background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+text-align: center;
+margin: 0;
+padding: 2.5rem 1rem;
+border-bottom: 2px solid #4b5563;
+}
+
+/* CLASS SELECTOR */
+.card {
+background-color: #111827;
+margin-bottom: 2rem;
+padding: 1.75rem;
+border: 1px solid #374151;
+border-radius: 12px;
+}
