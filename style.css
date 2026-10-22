@@ -9,98 +9,130 @@ line-height: 1.6;
 
 #main-header {
 text-align: center;
-padding: 2.5rem 1rem 1.5rem 1rem;
-background: linear-gradient(180deg, #1f2430 0%, #0d0f14 100%);
-border-bottom: 2px solid #c0c0c0;
+padding: 3rem 1rem 2rem 1rem;
+background: linear-gradient(180deg, #181d28 0%, #0d0f14 100%);
+border-bottom: 2px solid #00ffff;
+box-shadow: 0 4px 20px rgba(0, 255, 255, 0.15);
 }
 
 #main-header h1 {
-font-size: 2.4rem;
+font-size: 2.6rem;
 color: #ffffff;
 font-weight: 700;
 margin: 0 0 0.4rem 0;
-letter-spacing: 1px;
+letter-spacing: 1.5px;
+text-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
 }
 
 #main-header p {
-color: #9ca3af;
+color: #00ffff;
 font-size: 1.1rem;
 margin: 0;
+letter-spacing: 1px;
 }
 
 nav {
 display: flex;
 justify-content: center;
-gap: 2rem;
+gap: 1.5rem;
 background-color: #12151e;
-padding: 0.8rem 1rem;
+padding: 1rem;
 border-bottom: 1px solid #1f2430;
+position: sticky;
+top: 0;
+z-index: 100;
 }
 
 nav a {
-color: #00ffff;
+color: #9ca3af;
 text-decoration: none;
 font-weight: 600;
-padding: 0.3rem 0.8rem;
-border-radius: 4px;
-transition: all 0.2s ease-in-out;
+padding: 0.5rem 1.2rem;
+border-radius: 20px;
+border: 1px solid transparent;
+transition: all 0.3s ease;
 }
 
 nav a:hover {
-color: #ffffff;
-background-color: rgba(0, 255, 255, 0.15);
+color: #00ffff;
+border-color: #00ffff;
+background-color: rgba(0, 255, 255, 0.1);
+box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 main {
 max-width: 850px;
-margin: 2rem auto;
+margin: 2.5rem auto;
 padding: 0 1rem;
 }
 
+/* Card Styling with Glow Hover Effect */
 .card {
-background-color: #1a1a1a;
-border: 1px solid #c0c0c0;
-border-radius: 10px;
-padding: 1.8rem;
+background-color: #161922;
+border: 1px solid #2a3245;
+border-radius: 12px;
+padding: 2rem;
 margin-bottom: 2rem;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-4px);
+border-color: #00ffff;
+box-shadow: 0 8px 25px rgba(0, 255, 255, 0.15);
 }
 
 .card h2 {
 color: #00ffff;
-font-size: 1.5rem;
+font-size: 1.6rem;
 font-weight: 700;
 margin-top: 0;
 margin-bottom: 0.8rem;
-border-bottom: 1px solid rgba(0, 255, 255, 0.4);
-padding-bottom: 0.4rem;
+border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+padding-bottom: 0.5rem;
 }
 
 .card h3 {
 color: #ffffff;
-font-size: 1.15rem;
-margin-top: 1rem;
+font-size: 1.2rem;
+margin-top: 1.2rem;
 margin-bottom: 0.4rem;
 }
 
 .card p {
 color: #9ca3af;
 font-size: 1rem;
-margin: 0.4rem 0;
+margin: 0.5rem 0;
 }
 
+/* Custom Skill Badges / Tags */
+.tag {
+display: inline-block;
+background: rgba(0, 255, 255, 0.1);
+color: #00ffff;
+border: 1px solid #00ffff;
+padding: 0.25rem 0.75rem;
+border-radius: 15px;
+font-size: 0.85rem;
+font-weight: 600;
+margin-right: 0.5rem;
+margin-top: 0.5rem;
+}
+
+/* Image Polish */
 .card img {
 max-width: 100%;
 height: auto;
 display: block;
-margin: 1.2rem auto 0 auto;
-border-radius: 6px;
-border: 1px solid #c0c0c0;
+margin: 1.5rem auto 0 auto;
+border-radius: 8px;
+border: 1px solid #00ffff;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 footer {
 text-align: center;
-padding: 1.5rem 1rem;
+padding: 2rem 1rem;
 color: #6b7280;
 font-size: 0.9rem;
 border-top: 1px solid #1f2430;
