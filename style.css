@@ -1,85 +1,108 @@
-
-/* Global Styles */
 body {
-background-color: #0b0f19;
-color: #f3f4f6;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+background-color: #0d0f14;
+color: #e5e7eb;
+font-family: 'Exo 2', sans-serif;
 margin: 0;
 padding: 0;
 line-height: 1.6;
 }
 
-h2 {
-color: #00ffff;
-border-bottom: 2px solid rgba(0, 255, 255, 0.3);
-margin-top: 0;
-margin-bottom: 1rem;
-padding-bottom: 0.5rem;
+#main-header {
+text-align: center;
+padding: 2.5rem 1rem 1.5rem 1rem;
+background: linear-gradient(180deg, #1f2430 0%, #0d0f14 100%);
+border-bottom: 2px solid #c0c0c0;
 }
 
-p {
+#main-header h1 {
+font-size: 2.4rem;
+color: #ffffff;
+font-weight: 700;
+margin: 0 0 0.4rem 0;
+letter-spacing: 1px;
+}
+
+#main-header p {
 color: #9ca3af;
-margin-bottom: 1rem;
+font-size: 1.1rem;
+margin: 0;
 }
 
 nav {
-background-color: #0f172a;
 display: flex;
 justify-content: center;
-gap: 1.5rem;
-margin: 0;
-padding: 1rem;
-border-bottom: 1px solid #1e293b;
+gap: 2rem;
+background-color: #12151e;
+padding: 0.8rem 1rem;
+border-bottom: 1px solid #1f2430;
 }
 
 nav a {
 color: #00ffff;
 text-decoration: none;
 font-weight: 600;
-padding: 0.4rem 0.8rem;
+padding: 0.3rem 0.8rem;
 border-radius: 4px;
+transition: all 0.2s ease-in-out;
 }
 
 nav a:hover {
+color: #ffffff;
 background-color: rgba(0, 255, 255, 0.15);
 }
 
 main {
-max-width: 800px;
+max-width: 850px;
 margin: 2rem auto;
 padding: 0 1rem;
 }
 
-img {
+.card {
+background-color: #1a1a1a;
+border: 1px solid #c0c0c0;
+border-radius: 10px;
+padding: 1.8rem;
+margin-bottom: 2rem;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card h2 {
+color: #00ffff;
+font-size: 1.5rem;
+font-weight: 700;
+margin-top: 0;
+margin-bottom: 0.8rem;
+border-bottom: 1px solid rgba(0, 255, 255, 0.4);
+padding-bottom: 0.4rem;
+}
+
+.card h3 {
+color: #ffffff;
+font-size: 1.15rem;
+margin-top: 1rem;
+margin-bottom: 0.4rem;
+}
+
+.card p {
+color: #9ca3af;
+font-size: 1rem;
+margin: 0.4rem 0;
+}
+
+.card img {
 max-width: 100%;
 height: auto;
-border-radius: 8px;
-border: 1px solid #4b5563;
-margin-top: 1rem;
+display: block;
+margin: 1.2rem auto 0 auto;
+border-radius: 6px;
+border: 1px solid #c0c0c0;
 }
 
 footer {
 text-align: center;
-padding: 1.5rem;
+padding: 1.5rem 1rem;
 color: #6b7280;
-border-top: 1px solid #1f2937;
-margin-top: 2rem;
-}
-
-/* ID SELECTOR */
-#main-header {
-background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
-text-align: center;
-margin: 0;
-padding: 2.5rem 1rem;
-border-bottom: 2px solid #4b5563;
-}
-
-/* CLASS SELECTOR */
-.card {
-background-color: #111827;
-margin-bottom: 2rem;
-padding: 1.75rem;
-border: 1px solid #374151;
-border-radius: 12px;
+font-size: 0.9rem;
+border-top: 1px solid #1f2430;
+margin-top: 3rem;
 }
