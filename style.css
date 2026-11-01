@@ -146,7 +146,7 @@ gap: 16px;
 margin-top: 16px;
 }
 
-/* Breakpoint 1: Tablet Viewport (768px and below) */
+/* Breakpoint 1: Tablet Viewport (768px) */
 @media (max-width: 768px) {
 main {
 max-width: 720px;
@@ -167,8 +167,8 @@ grid-template-columns: repeat(2, 1fr);
 }
 }
 
-/* Breakpoint 2: Mobile Viewport (480px and below) */
-@media (max-width: 480px) {
+/* Breakpoint 2: Mobile Viewport (320px and below) */
+@media (max-width: 320px) {
 #main-header {
 padding: 24px 16px;
 }
