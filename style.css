@@ -138,3 +138,62 @@ font-size: 0.9rem;
 border-top: 1px solid #1f2430;
 margin-top: 3rem;
 }
+/* Multi-Column Grid Layout */
+.grid-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 16px;
+margin-top: 16px;
+}
+
+/* Breakpoint 1: Tablet Viewport (768px and below) */
+@media (max-width: 768px) {
+main {
+max-width: 720px;
+margin: 24px auto;
+}
+
+#main-header h1 {
+font-size: 2.1rem;
+}
+
+nav {
+gap: 16px;
+padding: 12px;
+}
+
+.grid-container {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/* Breakpoint 2: Mobile Viewport (480px and below) */
+@media (max-width: 480px) {
+#main-header {
+padding: 24px 16px;
+}
+
+#main-header h1 {
+font-size: 1.75rem;
+}
+
+nav {
+flex-direction: column;
+align-items: center;
+gap: 8px;
+}
+
+nav a {
+width: 100%;
+text-align: center;
+box-sizing: border-box;
+}
+
+.grid-container {
+grid-template-columns: 1fr;
+}
+
+.card {
+padding: 16px;
+}
+}
