@@ -73,7 +73,57 @@
 © 2026 Esme Alonso. All rights reserved.
 </p>
 </footer>
+<script>
+const form = document.getElementById("contact-form");
+const statusBox = document.getElementById("form-status");
 
+form.addEventListener("submit", function (event) {
+event.preventDefault();
+let hasError = false;
+statusBox.textContent = "";
+
+const fields = [
+{
+input: document.getElementById("visitor-name"),
+error: document.getElementById("name-error"),
+message: "Please enter your name."
+},
+{
+input: document.getElementById("visitor-email"),
+error: document.getElementById("email-error"),
+message: "Please enter a valid email address."
+},
+{
+input: document.getElementById("visitor-message"),
+error: document.getElementById("message-error"),
+message: "Please enter a message."
+}
+];
+
+fields.forEach(({ input, error, message }) => {
+const invalid = !input.value.trim() || (input.type === "email" && !input.validity.valid);
+if (invalid) {
+hasError = true;
+input.setAttribute("aria-invalid", "true");
+error.textContent = message;
+} else {
+input.setAttribute("aria-invalid", "false");
+error.textContent = "";
+}
+});
+
+if (hasError) {
+statusBox.textContent = "Please fix the highlighted fields before submitting.";
+const firstInvalid = form.querySelector('[aria-invalid="true"]');
+if (firstInvalid) firstInvalid.focus();
+} else {
+statusBox.textContent = "Your message is ready to send.";
+form.reset();
+}
+});
+</script>
+</body>
+</html>
 
 </body>
 </html>
